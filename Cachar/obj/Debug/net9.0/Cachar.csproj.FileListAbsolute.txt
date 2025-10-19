@@ -97,3 +97,4 @@ C:\Users\Usuario\RiderProjects\Cachar\Cachar\obj\Debug\net9.0\refint\Cachar.dll
 C:\Users\Usuario\RiderProjects\Cachar\Cachar\obj\Debug\net9.0\Cachar.pdb
 C:\Users\Usuario\RiderProjects\Cachar\Cachar\obj\Debug\net9.0\Cachar.genruntimeconfig.cache
 C:\Users\Usuario\RiderProjects\Cachar\Cachar\obj\Debug\net9.0\ref\Cachar.dll
+C:\Users\Usuario\RiderProjects\Cachar\Cachar\obj\Debug\net9.0\Cachar.sourcelink.json

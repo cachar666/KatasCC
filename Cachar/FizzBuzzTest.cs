@@ -27,6 +27,17 @@ public class FizzBuzzTest
         //Assert
         result.Should().Be("2");
     }
+    
+    [Fact]
+    public void Si_EnvioTres_Debe_Retornar_Fizz()
+    {
+        //Arrange
+        int entrada = 3;
+        //Act
+        string result = FizzBuzz(entrada);
+        //Assert
+        result.Should().Be("Fizz");
+    }
 
     private string FizzBuzz(int entrada)
     {
