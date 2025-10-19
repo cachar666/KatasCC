@@ -42,6 +42,7 @@ public class FizzBuzzTest
     private string FizzBuzz(int entrada)
     {
         if (entrada == 2) return "2";
+        if (entrada == 3) return "Fizz";
         
         return "1";
         
