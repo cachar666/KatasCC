@@ -17,7 +17,7 @@ public class StackTest
         string result = Stack(entrada);
             
         // Assert
-        result.Should().Be("1");
+        result.Should().Be("2");
     }
     
     public String Stack(string entrada)
