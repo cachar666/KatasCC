@@ -1,3 +1,4 @@
+using System.Collections;
 using FluentAssertions;
 namespace Cachar;
 
@@ -30,7 +31,7 @@ public class StackTest
         string result = Stack(entrada);
             
         // Assert
-        result.Should().MatchRegex("^([1-5]|Sin Slot)$");
+        result.Should().MatchRegex("^([1-5]|Sin Slot|Exeso de slots)$");
     }
 
     [Fact]
@@ -43,7 +44,23 @@ public class StackTest
         string result = Stack(entrada);
             
         // Assert
-        result.Should().MatchRegex("^([1-5]|Sin Slot)$");
+        result.Should().MatchRegex("^([1-5]|Sin Slot|Exeso de slots)$");
+    }
+    
+    [Fact]
+    public void Si_HacePushConCincoSlotsDebe_RetornarExceso_De_Slots()
+    {
+        // Arrange
+        string entrada = "Push";
+        
+        // Act
+        Stack(entrada);
+        Stack(entrada);
+        Stack(entrada);
+        string result = Stack(entrada);
+            
+        // Assert
+        result.Should().MatchRegex("^([1-5]|Sin Slot|Exeso de slots)$");
     }
     
     public String Stack(string entrada)
