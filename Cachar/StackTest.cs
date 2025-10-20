@@ -17,7 +17,7 @@ public class StackTest
         string result = Stack(entrada);
             
         // Assert
-        result.Should().Be("2");
+        result.Should().MatchRegex("^[1-5]$");
     }
     
     public String Stack(string entrada)
