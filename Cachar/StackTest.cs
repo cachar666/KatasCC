@@ -17,7 +17,7 @@ public class StackTest
         string result = Stack(entrada);
             
         // Assert
-        result.Should().MatchRegex("^[1-5]$");
+        result.Should().MatchRegex("^([1-5]|Sin Slot)$");
     }
     
     [Fact]
@@ -30,7 +30,20 @@ public class StackTest
         string result = Stack(entrada);
             
         // Assert
-        result.Should().MatchRegex("^[1-5]$");
+        result.Should().MatchRegex("^([1-5]|Sin Slot)$");
+    }
+
+    [Fact]
+    public void Si_HacePopSinSlotsDebe_RetornarSinSlots()
+    {
+        // Arrange
+        string entrada = "Pop";
+            
+        // Act
+        string result = Stack(entrada);
+            
+        // Assert
+        result.Should().MatchRegex("^([1-5]|Sin Slot)$");
     }
     
     public String Stack(string entrada)
@@ -43,6 +56,9 @@ public class StackTest
 
         if (entrada == "Pop")
         {
+            if (Pila.Length==1){
+                return "Sin Slot";
+            }
             // Reducir el arreglo quitando un slot
             Array.Resize(ref Pila, Pila.Length - 1);
         }
