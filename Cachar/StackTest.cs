@@ -67,6 +67,9 @@ public class StackTest
     {
         if (entrada == "Push")
         {
+            if (Pila.Length>4){
+                return "Exeso de slots";
+            }
             // Expandir el arreglo agregando un slot
             Array.Resize(ref Pila, Pila.Length + 1);
         }
