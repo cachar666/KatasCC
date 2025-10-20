@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cachar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ac28f0f95abb310766c8b7e3daa2b5981d482d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8dee4609a862e046f76ccc529b7cd9b9bd237d2c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cachar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cachar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
