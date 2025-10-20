@@ -54,6 +54,7 @@ public class FizzBuzzTest
     {
         if (entrada == 2) return "2";
         if (entrada == 3) return "Fizz";
+        if (entrada == 4) return "4";
         
         return "1";
         
